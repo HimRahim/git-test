@@ -64,3 +64,21 @@ console.log(200000)
 console.log(12200000000)
 console.log(0.00000001)
 console.log(0.00012)
+
+// number 2
+// 1.
+let nums1: number[] = [100, 111, 55, 21, 99];
+for (const num of nums1) {
+    console.log(num.toString(8))
+}
+
+// 2.
+for (const num of nums1) {
+    console.log(num.toString(16))
+}
+
+// 3.
+let nums2: number[] = [12.423, 31313.135, 42.809]
+for (const num of nums2) {
+    console.log(Math.round(num))
+}
