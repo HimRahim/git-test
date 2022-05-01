@@ -90,7 +90,7 @@ console.log(typeof "ABD");
 console.log(typeof 113113);
 console.log(typeof null);
 console.log(typeof "");
-// operator
+// operators
 // 1.
 console.log(Number("230"));
 // 2.
@@ -101,4 +101,28 @@ console.log(Math.pow(3, 4));
 let x = 6;
 x *= 20;
 console.log(x);
+let student = {
+    name: 'adam',
+    id: 'std-1',
+    year: 4,
+    gpa: 4.00,
+    grades: {
+        math: 4,
+        science: 4
+    }
+};
+// 2.
+let student2 = Object.assign({}, student);
+student2.grades = null;
+for (const key in student2) {
+    console.log(`${key} : ${student2[key]}`);
+}
+student2.isActive = true;
+for (const key in student2) {
+    console.log(`${key} : ${student2[key]}`);
+}
+delete student2.isActive;
+for (const key in student2) {
+    console.log(`${key} : ${student2[key]}`);
+}
 //# sourceMappingURL=app.js.map

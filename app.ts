@@ -127,3 +127,45 @@ console.log(3 ** 4)
 let x: number = 6
 x *= 20
 console.log(x)
+
+// object
+// 1.
+interface Student {
+    name: string,
+    id: string,
+    year: number,
+    gpa: number,
+    grades: object,
+    isActive? : boolean
+}
+let student: Student = {
+    name: 'adam',
+    id: 'std-1',
+    year: 4,
+    gpa: 4.00,
+    grades: {
+        math: 4,
+        science: 4
+    }
+}
+
+// 2.
+let student2 = Object.assign({}, student)
+student2.grades = null
+
+// 3.
+for (const key in student2) {
+    console.log(`${key} : ${student2[key]}`)
+}
+
+// 4.
+student2.isActive = true
+for (const key in student2) {
+    console.log(`${key} : ${student2[key]}`)
+}
+
+// 5.
+delete student2.isActive
+for (const key in student2) {
+    console.log(`${key} : ${student2[key]}`)
+}
