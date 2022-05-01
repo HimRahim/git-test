@@ -187,4 +187,24 @@ let subject = {
     id: mathId
 };
 console.log(subject);
+class Programmer {
+    constructor(name) {
+        this.name = name;
+    }
+    work() {
+        console.log(`${this.name} is working`);
+    }
+}
+class CTO {
+    constructor(name) {
+        this.name = name;
+    }
+    work() {
+        console.log(`${this.name} is working`);
+    }
+}
+let programmer = new Programmer('adam');
+programmer.work();
+let cto = new CTO('bob');
+cto.work();
 //# sourceMappingURL=app.js.map

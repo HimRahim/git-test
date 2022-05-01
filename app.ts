@@ -252,3 +252,36 @@ let subject: Subject = {
     id: mathId
 }
 console.log(subject)
+
+// class
+// 1.
+interface Workable {
+    work(): void;
+}
+
+// 2.
+class Programmer implements Workable {
+    name: string;
+    constructor(name: string) {
+        this.name = name;
+    }
+    work() {
+        console.log(`${this.name} is working`)
+    }
+}
+
+class CTO implements Workable {
+    name: string;
+    constructor(name: string) {
+        this.name = name;
+    }
+    work() {
+        console.log(`${this.name} is working`)
+    }
+}
+
+// 3.
+let programmer = new Programmer('adam')
+programmer.work()
+let cto = new CTO('bob')
+cto.work()
