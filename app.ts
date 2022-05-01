@@ -169,3 +169,10 @@ delete student2.isActive
 for (const key in student2) {
     console.log(`${key} : ${student2[key]}`)
 }
+
+// array
+// 1.
+let fruits: string[] = ['Apples', 'Pear', 'Orange']
+let shoppingCart: string[] = fruits
+shoppingCart.push('Banana')
+console.log(fruits.length) // 4

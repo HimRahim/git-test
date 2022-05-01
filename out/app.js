@@ -114,15 +114,24 @@ let student = {
 // 2.
 let student2 = Object.assign({}, student);
 student2.grades = null;
+// 3.
 for (const key in student2) {
     console.log(`${key} : ${student2[key]}`);
 }
+// 4.
 student2.isActive = true;
 for (const key in student2) {
     console.log(`${key} : ${student2[key]}`);
 }
+// 5.
 delete student2.isActive;
 for (const key in student2) {
     console.log(`${key} : ${student2[key]}`);
 }
+// array
+// 1.
+let fruits = ['Apples', 'Pear', 'Orange'];
+let shoppingCart = fruits;
+shoppingCart.push('Banana');
+console.log(fruits.length);
 //# sourceMappingURL=app.js.map
