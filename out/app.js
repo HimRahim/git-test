@@ -155,7 +155,23 @@ console.log(arr4);
 // 6.
 let fruit = arr2.find(item => item == 'Mango');
 console.log(fruit);
+// 7.
 arr2.forEach((item, index, arr) => {
     console.log(`${item} is at ${index} in ${arr}`);
 });
+// arrow function
+// 1.
+let calRectangleArea = (height, width) => {
+    return height * width;
+};
+console.log(calRectangleArea(4, 4));
+// 2.
+let isPrimeNumber = (num) => {
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0)
+            return false;
+    }
+    return true;
+};
+console.log(isPrimeNumber(4));
 //# sourceMappingURL=app.js.map

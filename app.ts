@@ -207,3 +207,19 @@ console.log(fruit)
 arr2.forEach((item, index, arr) => {
     console.log(`${item} is at ${index} in ${arr}`)
 })
+
+// arrow function
+// 1.
+let calRectangleArea = (height: number, width: number): number => {
+    return height * width
+}
+console.log(calRectangleArea(4, 4))
+
+// 2.
+let isPrimeNumber = (num: number): boolean => {
+    for (let i = 2; i <num; i++) {
+        if (num % i === 0) return false
+    }
+    return true
+}
+console.log(isPrimeNumber(5))
