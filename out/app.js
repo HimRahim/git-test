@@ -67,7 +67,7 @@ for (const num of nums2) {
     console.log(Math.round(num));
 }
 // number 3
-// 1. 
+// 1.
 function random(min, max) {
     return Math.random() * (max - min) + min;
 }
@@ -80,19 +80,19 @@ let c = false;
 // 2.
 console.log(a || (b && c));
 // 3.
-console.log(b || (a || c));
+console.log(b || a || c);
 // 4.
 console.log(b && (a || c));
 // typeof
 // 1.
 console.log(typeof false);
-console.log(typeof "ABD");
+console.log(typeof 'ABD');
 console.log(typeof 113113);
 console.log(typeof null);
-console.log(typeof "");
+console.log(typeof '');
 // operators
 // 1.
-console.log(Number("230"));
+console.log(Number('230'));
 // 2.
 console.log(String(230));
 // 3.
@@ -105,11 +105,11 @@ let student = {
     name: 'adam',
     id: 'std-1',
     year: 4,
-    gpa: 4.00,
+    gpa: 4.0,
     grades: {
         math: 4,
-        science: 4
-    }
+        science: 4,
+    },
 };
 // 2.
 let student2 = Object.assign({}, student);
@@ -133,5 +133,29 @@ for (const key in student2) {
 let fruits = ['Apples', 'Pear', 'Orange'];
 let shoppingCart = fruits;
 shoppingCart.push('Banana');
-console.log(fruits.length);
+console.log(fruits.length); // 4
+// method array
+// 1.
+let str8 = 'Apple, Cat, Zoo, Bird, Dog';
+let input = str8.split(', ').sort();
+console.log(input);
+// 2.
+let arr1 = [123, 132, 423, 423, 12345, 5343, 52, 10904, 64];
+console.log(arr1.filter(item => String(item).startsWith('1')));
+// 3.
+let arr2 = ['Apple', 'Mango', 'Cat', 'Banana'];
+arr2.splice(2, 1, 'Orange').sort();
+console.log(arr2);
+// 4.
+let arr3 = arr1.map(item => item * 2);
+console.log(arr3);
+// 5.
+let arr4 = arr2.filter(item => item == 'Apple');
+console.log(arr4);
+// 6.
+let fruit = arr2.find(item => item == 'Mango');
+console.log(fruit);
+arr2.forEach((item, index, arr) => {
+    console.log(`${item} is at ${index} in ${arr}`);
+});
 //# sourceMappingURL=app.js.map
