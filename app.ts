@@ -5,7 +5,7 @@ text2 = 'Hello 2'
 console.log(text);
 console.log(text2)
 
-
+//template string 1
 // 1.
 let str: string = 'this is String';
 console.log(str)
@@ -24,3 +24,28 @@ console.log(str[20])
 let str1: string = 'hello'
 let str2: string = 'world'
 console.log(`${str1} ${str2}`)
+
+
+//template string 2
+// 1.
+let str3: string = 'microsoft excel';
+console.log(str3.toUpperCase())
+
+// 2.
+let str4: string = 'GOOGLE AND APPLE'
+console.log(str4.toLowerCase())
+
+// 3.
+let str5: string = 'hello world'
+let str6: string = `H${str5.slice(1, 5)} W${str5.slice(7)}`
+console.log(str6)
+
+// 4.
+let str7: string = 'Hello world';
+console.log(str7.startsWith('Hello'))
+console.log(str7.startsWith('World'))
+
+// 5.
+console.log('Computer'.slice(3, 6))
+console.log('Death Race'.slice(0, 5))
+console.log('Republican'.substring(2, 8))
