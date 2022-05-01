@@ -173,5 +173,18 @@ let isPrimeNumber = (num) => {
     }
     return true;
 };
-console.log(isPrimeNumber(4));
+console.log(isPrimeNumber(5));
+let icCard = {
+    id: 1,
+    name: 'adam'
+};
+console.log(icCard);
+let mathId = {
+    id: 'math-101'
+};
+let subject = {
+    name: 'math',
+    id: mathId
+};
+console.log(subject);
 //# sourceMappingURL=app.js.map

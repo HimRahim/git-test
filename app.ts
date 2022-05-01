@@ -223,3 +223,32 @@ let isPrimeNumber = (num: number): boolean => {
     return true
 }
 console.log(isPrimeNumber(5))
+
+// interface
+// 1.
+interface ICCard {
+    id: number,
+    name: string,
+}
+let icCard: ICCard = {
+    id: 1,
+    name: 'adam'
+}
+console.log(icCard)
+
+// 2.
+interface SubjectID {
+    id: string
+}
+interface Subject {
+    name: string,
+    id: SubjectID
+}
+let mathId: SubjectID = {
+    id: 'math-101'
+}
+let subject: Subject = {
+    name: 'math',
+    id: mathId
+}
+console.log(subject)
