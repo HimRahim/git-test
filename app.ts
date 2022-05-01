@@ -49,3 +49,18 @@ console.log(str7.startsWith('World'))
 console.log('Computer'.slice(3, 6))
 console.log('Death Race'.slice(0, 5))
 console.log('Republican'.substring(2, 8))
+
+// number 1
+// 1.
+console.log(1e6)
+console.log(1e7)
+console.log(4.3e10)
+console.log(1.2e-5)
+console.log(1.234e-7)
+
+// 2.
+console.log(10000000000)
+console.log(200000)
+console.log(12200000000)
+console.log(0.00000001)
+console.log(0.00012)
