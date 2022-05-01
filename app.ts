@@ -104,3 +104,11 @@ console.log(b || (a || c))
 
 // 4.
 console.log(b && (a || c))
+
+// typeof
+// 1.
+console.log(typeof false)
+console.log(typeof "ABD")
+console.log(typeof 113113)
+console.log(typeof null)
+console.log(typeof "")
