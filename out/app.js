@@ -66,4 +66,10 @@ let nums2 = [12.423, 31313.135, 42.809];
 for (const num of nums2) {
     console.log(Math.round(num));
 }
+// number 3
+// 1. 
+function random(min, max) {
+    return Math.random() * (max - min) + min;
+}
+console.log(random(5, 10));
 //# sourceMappingURL=app.js.map
