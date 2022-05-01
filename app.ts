@@ -89,3 +89,18 @@ function random(min: number, max: number): number {
     return Math.random() * (max - min) + min
 }
 console.log(random(5, 10))
+
+// boolean
+// 1.
+let a: boolean = false
+let b: boolean = true
+let c: boolean = false
+
+// 2.
+console.log(a || (b && c))
+
+// 3.
+console.log(b || (a || c))
+
+// 4.
+console.log(b && (a || c))
