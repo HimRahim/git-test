@@ -112,3 +112,18 @@ console.log(typeof "ABD")
 console.log(typeof 113113)
 console.log(typeof null)
 console.log(typeof "")
+
+// operators
+// 1.
+console.log(Number("230"))
+
+// 2.
+console.log(String(230))
+
+// 3.
+console.log(3 ** 4)
+
+// 4.
+let x: number = 6
+x *= 20
+console.log(x)

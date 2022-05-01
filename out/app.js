@@ -90,4 +90,15 @@ console.log(typeof "ABD");
 console.log(typeof 113113);
 console.log(typeof null);
 console.log(typeof "");
+// operator
+// 1.
+console.log(Number("230"));
+// 2.
+console.log(String(230));
+// 3.
+console.log(Math.pow(3, 4));
+// 4.
+let x = 6;
+x *= 20;
+console.log(x);
 //# sourceMappingURL=app.js.map
